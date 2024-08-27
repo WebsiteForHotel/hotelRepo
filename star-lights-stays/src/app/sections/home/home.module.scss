@@ -1,0 +1,60 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.home {
+  width: 100%;
+  height: calc(100vh - 240px);
+  position: relative;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: left;
+  color: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../../public//images/main-banner-img.webp");
+  @include flexContainer(center, center);
+  &_description {
+    max-width: 47%;
+    & > h1 {
+      margin-bottom: 17px;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 42px;
+      line-height: 52px;
+      font-weight: 700;
+    }
+    & > p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+      font-size: 24px;
+      line-height: 34px;
+      -webkit-tap-highlight-color: transparent;
+      font-weight: 300;
+    }
+  }
+
+  &_form {
+    background: $white;
+    position: relative;
+    border-radius: 16px;
+    z-index: 1;
+    padding: 15px 10px 0;
+    height: 380px;
+    @include flexContainer(center, center);
+    max-width: 50%;
+    &_banner {
+      width: 700px;
+    }
+  }
+}
+
+.container {
+  @include flexContainer(center, flex-start);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3rem;
+}

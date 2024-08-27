@@ -1,0 +1,57 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.header {
+  padding: 26px 0;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background: $white;
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1590px;
+  padding-left: 45px;
+  padding-right: 45px;
+  @include flexContainer(space-between, center);
+  }
+  &_logo {
+    max-width: 250px;
+    height: auto;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &_nav {
+    max-width: 100%;
+
+    &_menu {
+      @include flexContainer(space-between, center);
+
+      & > li {
+        padding: 0 50px;
+        font-weight: 600;
+        color: $black;
+        cursor: pointer;
+        &:hover {
+          color: $purple;
+        }
+      }
+      & > li:first-child {
+        color: $purple;
+        padding-left: 0;
+      }
+      & > li:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+

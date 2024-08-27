@@ -1,0 +1,17 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.card {
+  text-align: center;
+  min-width: 260px;
+  width: 265px;
+  padding: 1rem;
+  @include flexContainer(center, center, column, 1rem);
+  font: 400 12px / 1.8 "Open Sans", sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+  &_img > svg{
+    width: 42px;
+    height: 42px;
+  }
+}

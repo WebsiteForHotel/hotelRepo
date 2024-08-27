@@ -1,0 +1,26 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.facilities {
+  margin-top: 4rem;
+  @include flexContainer(center, center, column, 6rem);
+  &_text {
+    @include flexContainer(center, center, column, 2rem);
+    &_title {
+      letter-spacing: 4px;
+      font-weight: 400;
+      font-size: 30px;
+    }
+    &_desc {
+      font-family: Volkhov, times new roman, sans-serif;
+      width: 550px;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+  &_wrapper {
+    @include flexContainer(center, center, row, 3rem);
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
