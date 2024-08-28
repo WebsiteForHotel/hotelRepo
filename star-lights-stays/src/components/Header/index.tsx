@@ -19,6 +19,9 @@ const Header = () => {
            <Link href={"/"}>   Home</Link>
             </li>
             <li className={styles.header_nav_menu_item}>
+           <Link href={"/hotels"}>   Hotels</Link>
+            </li>
+            <li className={styles.header_nav_menu_item}>
               <Link href={"#facilites"}>Facilities</Link>
             </li>
             <li className={styles.header_nav_menu_item}>

@@ -1,0 +1,115 @@
+// Variables for styling
+$border-radius: 0.75rem;
+$font-size-title: 1.5rem;
+$font-size-description: 1rem;
+$spacing: 1rem;
+$spacing-small: 0.5rem;
+$color-featured: #f39c12;
+$color-background: #ffffff;
+$color-border: #eaeaea;
+$color-text: #333333;
+$color-link: #3498db;
+$color-link-hover: #2980b9;
+// Variables for styling
+$spacing-10: 2.5rem;
+$spacing-20: 5rem;
+$container-max-width: 1200px;
+
+// Existing styles...
+
+.container {
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: $border-radius;
+    background-color: $color-background;
+    overflow: hidden;
+    border: 1px solid $color-border;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    &.featured {
+        border-color: $color-featured;
+    }
+
+    &-cover {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &-content {
+        padding: $spacing;
+    }
+
+    &-title {
+        font-size: $font-size-title;
+        margin-bottom: $spacing-small;
+        color: $color-text;
+    }
+
+    &-description {
+        font-size: $font-size-description;
+        margin-bottom: $spacing;
+        color: $color-text;
+    }
+
+    &-amenities {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: $spacing;
+
+        .amenity {
+            display: flex;
+            align-items: center;
+            margin-right: $spacing-small;
+            margin-bottom: $spacing-small;
+
+            .amenity-icon {
+                margin-right: $spacing-small;
+            }
+        }
+    }
+
+    &-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacing;
+    }
+
+    &-note {
+        font-size: $font-size-description;
+        color: $color-featured;
+        margin-bottom: $spacing;
+    }
+
+    &-link {
+        display: inline-block;
+        color: $color-link;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+}
