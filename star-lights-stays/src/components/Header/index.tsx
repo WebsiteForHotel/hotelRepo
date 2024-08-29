@@ -28,11 +28,9 @@ const Header = () => {
               Why Us
             </li>
             <li className={styles.header_nav_menu_item}>
-              Contacts
+            <Link href={"#contacts"}>Contacts</Link>  
             </li>
-            <li className={styles.header_nav_menu_item}>
-              <Link href={"/signin"}>Sign in</Link>
-            </li>
+            
           </ul>
         </nav>
       </div>

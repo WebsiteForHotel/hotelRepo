@@ -23,32 +23,36 @@ $container-max-width: 1200px;
     margin-right: auto;
 }
 
-.flex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    gap:30px;
-    flex-wrap: wrap;
-}
+// .flex {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     justify-content: space-evenly;
+//     gap:30px;
+//     flex-wrap: wrap;
+// }
 
 .card {
+
     border-radius: $border-radius;
     background-color: $color-background;
     overflow: hidden;
     border: 1px solid $color-border;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-height: 500px;
+   // transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px 0;
 
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
+    // &:hover {
+    //     transform: translateY(-5px);
+    //     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    // }
 
     &.featured {
         border-color: $color-featured;
     }
 
-    &-cover {
+    &_cover {
+       max-height: 400px;
         img {
             width: 100%;
             height: auto;
@@ -56,52 +60,37 @@ $container-max-width: 1200px;
         }
     }
 
-    &-content {
+    &_content {
         padding: $spacing;
     }
 
-    &-title {
+    &_title {
         font-size: $font-size-title;
         margin-bottom: $spacing-small;
-        color: $color-text;
+        color: $color-background;
     }
 
-    &-description {
+    &_description {
         font-size: $font-size-description;
         margin-bottom: $spacing;
-        color: $color-text;
+        color: $color-background;
     }
 
-    &-amenities {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: $spacing;
 
-        .amenity {
-            display: flex;
-            align-items: center;
-            margin-right: $spacing-small;
-            margin-bottom: $spacing-small;
 
-            .amenity-icon {
-                margin-right: $spacing-small;
-            }
-        }
-    }
-
-    &-details {
+    &_details {
         display: flex;
         justify-content: space-between;
         margin-bottom: $spacing;
     }
 
-    &-note {
+    &_note {
         font-size: $font-size-description;
         color: $color-featured;
         margin-bottom: $spacing;
     }
 
-    &-link {
+    &_link {
         display: inline-block;
         color: $color-link;
         text-decoration: none;
