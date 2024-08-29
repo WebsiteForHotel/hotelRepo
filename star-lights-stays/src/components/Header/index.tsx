@@ -30,6 +30,9 @@ const Header = () => {
             <li className={styles.header_nav_menu_item}>
               Contacts
             </li>
+            <li className={styles.header_nav_menu_item}>
+              <Link href={"/signin"}>Sign in</Link>
+            </li>
           </ul>
         </nav>
       </div>
