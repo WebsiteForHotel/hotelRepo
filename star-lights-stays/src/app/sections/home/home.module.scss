@@ -11,7 +11,7 @@
   color: $white;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../../../../public//images/main-banner-img.webp");
+  background-image: url("../../../../public//images/banner.webp");
   @include flexContainer(center, center);
   &_description {
     max-width: 47%;
