@@ -1,0 +1,38 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.casino {
+    margin-top: 4rem;
+    padding-inline: 6rem;
+    @include flexContainer(center, center, column, 6rem);
+    &_text {
+      @include flexContainer(center, center, column, 2rem);
+      &_title {
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-size: 30px;
+      }
+      &_desc {
+        font-family: Volkhov, times new roman, sans-serif;
+        width: 550px;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+    &_wrapper{
+      @include flexContainer(space-between, center, _, 1rem);
+      &_cards{
+      @include flexContainer(center, center, column, 1rem);
+       margin-top: 1rem;
+  }
+  &_img {
+    width: 100%;
+    max-width: 517px; 
+    & > img {
+        max-width: 100%;
+        width: 100%; 
+        height: auto;
+    }
+}
+    }
+}

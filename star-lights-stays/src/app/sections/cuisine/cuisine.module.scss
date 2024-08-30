@@ -1,0 +1,37 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+
+
+
+.cuisine {
+    padding-inline: 6rem;
+    @include flexContainer(center, center, column, 6rem);
+    &_text {
+      @include flexContainer(center, center, column, 2rem);
+      &_title {
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-size: 30px;
+      }
+      &_desc {
+        font-family: Volkhov, times new roman, sans-serif;
+        width: 550px;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+   
+  &_wrapper{
+    @include flexContainer(space-between, center, _, 0rem);
+    width: 100%;
+
+  }
+}
+.hr {
+  width: 100%;
+  border: 0; 
+  height: 1px; 
+  background-color: #d4d1d1; 
+  margin-block: 5rem;
+}

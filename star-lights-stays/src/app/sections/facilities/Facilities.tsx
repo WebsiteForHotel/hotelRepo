@@ -18,7 +18,7 @@ const Facilities = () => {
       <div className={styles.facilities_wrapper}>
         {dataFacilities &&
           dataFacilities.length > 0 &&
-          dataFacilities.map((item) => <Card data={item} />)}
+          dataFacilities.map((item) => <Card data={item} key={item.id} />)}
       </div>
     </div>
   );
