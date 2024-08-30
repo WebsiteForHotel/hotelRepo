@@ -1,0 +1,36 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+
+.card{
+    @include flexContainer(space-between, flex-start, _, 1rem);
+    padding-inline: 55px;
+    margin-top: 2rem;
+    &:nth-child(1){
+    margin-top: 2rem;
+
+    }
+  &_img{
+   max-width: 40px;
+   width: 100%;
+   height: auto;
+    & > img {
+        max-width: 100%;
+    }
+  }
+  &_title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #111;
+  }
+  &_desc{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #999;
+    line-height: 1.5;
+    margin-top: .8rem;
+  }
+}

@@ -1,14 +1,15 @@
-import { HomePage, Facilities, Contacts } from "./sections";
-import WhyUs from "./sections/whyUs/WhyUs";
+import { HomePage, Facilities, Casino, Cuisine, Contacts } from "./sections";
 
 export default function Home() {
   return (
     <main>
       <HomePage />
       <Facilities />
-      <WhyUs/>
-      <Contacts/>
-      
+
+      <Contacts />
+
+      <Casino />
+      <Cuisine />
     </main>
   );
 }

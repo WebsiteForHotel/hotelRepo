@@ -1,0 +1,21 @@
+@import "@/styles/mixins.scss";
+@import "@/styles/variables.scss";
+
+.footer {
+  @include flexContainer(center, flex-start, _, 8rem);
+  width: 100%;
+  background-color: black;
+  height: auto;
+  color: $white;
+  margin-top: 5rem;
+  &_card {
+    width: 400px;
+    padding: .5rem;
+    text-align: start;
+    & > h2 {
+      border-bottom: 1px dashed white;
+      margin-block: 1rem;
+      padding-block: 1rem;
+    }
+  }
+}

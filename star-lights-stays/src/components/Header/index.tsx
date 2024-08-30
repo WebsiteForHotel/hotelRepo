@@ -47,6 +47,7 @@ const Header = () => {
           <ul className={styles.header_nav_menu}>
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"/"}>Home</Link>
+
             </li>
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"/hotels"}>Hotels</Link>
@@ -54,9 +55,18 @@ const Header = () => {
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"#facilites"}>Facilities</Link>
             </li>
+
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>Why Us</li>
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"#contacts"}>Contacts</Link>
+              </li>
+            <li className={styles.header_nav_menu_item}>
+              <Link href={"#casino"}>Casino</Link>
+
+            </li>
+            <li className={styles.header_nav_menu_item}>
+              Contacts
+
             </li>
           </ul>
         </nav>
