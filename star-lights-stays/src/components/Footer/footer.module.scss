@@ -4,6 +4,7 @@
 .footer {
   @include flexContainer(center, flex-start, _, 8rem);
   width: 100%;
+  padding:0 20px;
   background-color: black;
   height: auto;
   color: $white;
@@ -13,9 +14,13 @@
     padding: .5rem;
     text-align: start;
     & > h2 {
-      border-bottom: 1px dashed white;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.634);
       margin-block: 1rem;
       padding-block: 1rem;
+    }
+    & > p {
+    
+    font-size: small;
     }
   }
 }

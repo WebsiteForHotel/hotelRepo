@@ -57,9 +57,6 @@ const Header = () => {
             </li>
 
             <li className={styles.header_nav_menu_item} onClick={closeSidebar}>Why Us</li>
-            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
-              <Link href={"#contacts"}>Contacts</Link>
-              </li>
             <li className={styles.header_nav_menu_item}>
               <Link href={"#casino"}>Casino</Link>
 
