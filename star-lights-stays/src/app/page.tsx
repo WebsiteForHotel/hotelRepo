@@ -1,4 +1,4 @@
-import { HomePage, Facilities, Casino, Cuisine } from "./sections";
+import { HomePage, Facilities, Casino, Cuisine, Contacts } from "./sections";
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <Facilities />
       <Casino/>
       <Cuisine/>
+      <Contacts />
     </main>
   );
 }
+

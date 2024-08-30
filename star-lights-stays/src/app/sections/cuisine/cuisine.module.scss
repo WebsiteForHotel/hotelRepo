@@ -6,6 +6,7 @@
 
 .cuisine {
     padding-inline: 6rem;
+    padding-bottom: 2rem;
     @include flexContainer(center, center, column, 6rem);
     &_text {
       @include flexContainer(center, center, column, 2rem);

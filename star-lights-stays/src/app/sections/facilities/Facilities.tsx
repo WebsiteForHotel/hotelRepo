@@ -1,5 +1,4 @@
 import React from "react";
-
 import Card from "./components/Card";
 import { dataFacilities } from "./data/data";
 import styles from "../facilities/facilties.module.scss";
