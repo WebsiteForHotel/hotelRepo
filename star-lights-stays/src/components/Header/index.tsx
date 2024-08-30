@@ -41,18 +41,21 @@ const Header = () => {
           &#9776;
         </button>
         <nav className={`${styles.header_nav} ${isSidebarOpen ? styles.open : ""}`}>
+          <button className={styles.close_button} onClick={closeSidebar}>
+            &times;
+          </button>
           <ul className={styles.header_nav_menu}>
-            <li className={styles.header_nav_menu_item}>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"/"}>Home</Link>
             </li>
-            <li className={styles.header_nav_menu_item}>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"/hotels"}>Hotels</Link>
             </li>
-            <li className={styles.header_nav_menu_item}>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"#facilites"}>Facilities</Link>
             </li>
-            <li className={styles.header_nav_menu_item}>Why Us</li>
-            <li className={styles.header_nav_menu_item}>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>Why Us</li>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
               <Link href={"#contacts"}>Contacts</Link>
             </li>
           </ul>
