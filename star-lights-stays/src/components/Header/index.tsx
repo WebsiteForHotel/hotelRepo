@@ -64,10 +64,9 @@ const Header = () => {
               <Link href={"#casino"}>Casino</Link>
 
             </li>
-            <li className={styles.header_nav_menu_item}>
-              Contacts
-
-            </li>
+            <li className={styles.header_nav_menu_item} onClick={closeSidebar}>
+              <Link href={"#contacts"}>Contacts</Link>
+              </li>
           </ul>
         </nav>
       </div>

@@ -5,11 +5,10 @@ export default function Home() {
     <main>
       <HomePage />
       <Facilities />
-
-      <Contacts />
-
+      
       <Casino />
       <Cuisine />
+      <Contacts />
     </main>
   )
 }
