@@ -13,12 +13,12 @@ const Footer = () => {
       </div>
       <div className={styles.footer_card}>
         <h2>CONTACT US</h2>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Assumenda deserunt velit voluptate aut vitae!</p>
-        <p>Provident cum sit consectetur sequi rerum.</p>
-        <p>Quibusdam maiores minima reprehenderit ea laborum?</p>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Assumenda deserunt velit voluptate aut vitae!</p>
+        <p>Hotels</p>
+        <p>Terms and canditions</p>
+        <p>Privacy policy</p>
+
+        <p>Contact us</p>
+        
 
       </div>
       <div className={styles.footer_card}>
